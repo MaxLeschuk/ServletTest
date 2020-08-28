@@ -3,6 +3,7 @@ package servlets;
 import entities.User;
 import models.Model;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +21,7 @@ public class AddVoteServlet extends HttpServlet {
         User user = new User(request.getParameter("name"),yesOrNo);
         Model model = Model.getInstance();
         model.add(user);
-
+       response.sendRedirect("/ServletsTutorial/MainServlet");
     }
     public void destroy() {
 
