@@ -1,0 +1,5 @@
+servlets\AddVoteServlet.class
+entities\User.class
+models\Model.class
+servlets\VoteListServlet.class
+servlets\MainServlet.class
